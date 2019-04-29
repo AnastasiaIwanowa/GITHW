@@ -1,12 +1,14 @@
 package com.epam.anastasiya_ivanova.java.lesson1.task3;
 
 import java.util.Scanner;
-import java.util.InputMismatchException;
 
+/**
+ * Anastasiya Ivanova. Option 6.
+ */
 public class Application {
 
-    public void calc (){
-        int a,b,result;
+    public void calc() {
+        int a, b, result;
         String continuation;
         Scanner in = new Scanner(System.in);
         do {

@@ -2,18 +2,18 @@ package com.epam.anastasiya_ivanova.java.lesson1.task2;
 
 import java.util.Scanner;
 
+/**
+ * Anastasiya Ivanova. Option 6.
+ */
 public class Application {
 
-    public void startApplication(){
+    public void startApplication() {
         System.out.println("Input string");
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
         str.trim();
         StringProcessing sp = new StringProcessing();
-        for (String retval : str.split(" ")) {
-            System.out.println(retval);
-            System.out.println(sp.isNumbers(retval));
-        }
+        sp.outWordFromDigit(sp.createArrayBoolean(sp.createArrayStrings(str)), sp.createArrayStrings(str));
     }
 
 }
